@@ -1,0 +1,307 @@
+.contentWrapper {
+  margin-left: 15%; /* Same as the width of the sidebar */
+  padding-left: 20px; /* Update the padding value to your preference */
+  padding-top: 40px;
+}
+
+.sidebarOpen {
+  padding-left: 0;
+}
+
+.cardContainer {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
+
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  width: 100%;
+
+  @media (min-width: 720px) {
+    width: 24em;
+    align-items: flex-start;
+    order: 0;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+}
+.postTitle{
+    width: 100%;
+    height: auto;
+    min-height: 50x;
+    padding: 1em .5em;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+
+.my-editor-component, .myCustomQuilcss {
+  height: 400px;
+  border: 1px solid #ccc;
+}
+
+button.btn:focus {
+  outline: none !important;
+}
+
+/* metaData */
+
+.metaData{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    color: #FFF;
+    overflow-y: auto;
+    padding: 1em .5em;
+    margin: 1em 0;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.metaTag{
+    width: 100%;
+    padding: 1em;
+}
+
+/* faqs */
+.faqs{
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    color: #FFF;
+    overflow-y: auto;
+    padding: 1em .5em;
+    margin: 1em 0;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+/* faq */
+.faq{
+    width: 100%;
+    padding: 1em;
+}
+
+.titleTags{
+    width: 100%;
+    height: 140px;
+    background-color: #000;
+    color: #FFF;
+    overflow-y: auto;
+    padding: 1em .5em;
+    margin: 1em 0;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.fileTitle{
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 700; 
+    font-size: 1.1em;   
+}
+
+.paginationWrap{
+    width: 100%;
+    max-width: 340px;
+    margin:1em auto;    
+}
+
+
+
+.form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  order: 0;
+  margin: 0;
+
+  @media (min-width: 720px) {
+    order: 1;
+    margin: 0;
+  }
+  
+
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+  
+}
+
+.formTip {
+  font-size: .8em;
+  font-style: italic;
+  color: #787878;
+}
+
+.learnContainer {
+  text-align: center;
+}
+
+.attributesContainer {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  ul {
+    padding-left: 1.2em;
+  }
+
+  p,
+  ul {
+    margin-top: 0;
+  }
+
+}
+
+/* Chat PAGE */
+
+.chat .chatHistory {
+    padding: 20px;
+}
+
+.chat .chatHistory ul {
+    padding: 0
+}
+
+.chat .chatHistory ul li {
+    list-style: none;
+    margin-bottom: 30px
+}
+
+.chat .chatHistory ul li:last-child {
+    margin-bottom: 0px
+}
+
+.chat .chatHistory .messageData {
+    margin-bottom: 15px
+}
+
+.chat .chatHistory .messageData img {
+    border-radius: 40px;
+    width: 40px
+}
+
+.chat .chatHistory .message {
+
+    color: #444;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative
+}
+
+.chat .chatHistory .message:after {
+    bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px
+}
+
+.chat .chatHistory .codeBlock{
+  
+  white-space: pre-wrap;
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+
+
+}
+
+.chat .chatHistory .plainText {
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+.chat .chatHistory .myMessage {
+    background: #efefef;
+    color: #444;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative
+}
+
+.chat .chatHistory .myMessage:after {
+    bottom: 100%;
+    left: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #efefef;
+    border-width: 10px;
+    margin-left: -10px
+}
+
+.chat .chatHistory .other-message {
+    background: #e8f1f3;
+    text-align: right
+}
+
+.chat .chatHistory .other-message:after {
+    border-bottom-color: #e8f1f3;
+    left: 93%
+}
+
+.chat .chat-message {
+    padding: 20px
+}
+
+
+.float-right {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
